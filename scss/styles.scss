@@ -1,0 +1,11 @@
+// Import Archivos secundarios
+
+@use "base/reset";
+@use "base/estilos_grales";
+@use "utilidades/variables";
+@use "utilidades/mixin";
+@use "base/home";
+@use "base/mq-tablet";
+@use "base/mq-desktop";
+
+

@@ -1,0 +1,118 @@
+// Import de Archivos Secundarios
+
+@use "../utilidades/variables";
+@use "../utilidades/mixin";
+
+/* Estilos TABLET */
+
+@media (min-width:768px) and (max-width:1024px){
+
+    /* Propiedades del Menú */
+
+    .navbar-prop{
+        .container-menu{
+            .logo-container{
+                .logo{
+                    max-width: 300px;
+                }
+            }
+            .offcanvas-prop{
+                .menu-buttom{
+                    font-size: variables.$font-s-xl;
+                    }
+        }
+        }
+    }
+    }
+
+    @media screen and (min-width:768px){
+
+        /* Propiedades del Footer*/
+        
+        footer{
+            .derechos{
+                font-weight: variables.$font-w-medium;
+                font-size: variables.$font-s-larger;
+            }
+            .footer-completo{
+                .datos{
+                    font-weight: variables.$font-w-medium;
+                    font-size: variables.$font-s-larger;
+                    .contactanos{
+                        font-weight: variables.$font-w-black;
+                        font-size: variables.$font-s-xl;
+                    }
+                }
+                .redes-sociales{
+                    .redes{
+                        font-weight: variables.$font-w-black;
+                        font-size: variables.$font-s-xl;
+                    }
+                }
+            }        
+        }
+        
+        /* Propiedades del Contenido Principal*/
+       
+        .mainHome{
+            #productos{
+                h2{
+                    font-size: 40px;
+                }
+                p{
+                    @include mixin.tipo-tablet;
+                }
+            }
+            #nosotros{
+                h2{
+                    font-size: 40px;
+                }
+                .containerNosotros{
+                .p-nosotros{
+                    @include mixin.tipo-tablet;
+                    span{
+                        display:inline;
+                    }
+                }
+                }
+            }
+            #mayoristas{
+                h2{
+                    font-size: 40px;
+                }
+                p{
+                    @include mixin.tipo-tablet;
+                }
+                .p-mayoristas{
+                    font-size: variables.$font-s-xl;
+                    
+                    .cuadro-container{
+                        .cuadro-btn{
+                            font-size: variables.$font-s-xl;
+                            font-weight: variables.$font-w-medium;
+                        }
+                    }
+                }
+                #formularioContacto{
+                    max-width: 700px;
+                    padding: 20px;
+                    .form-mayoristas{
+                        font-size: variables.$font-s-larger;
+                    }
+                    #contactoForm{
+                        gap: 10px;
+                        .form-group{
+                            input, textarea{
+                                font-size: variables.$font-s-larger;
+                            }
+                            button {
+                                padding: 15px 30px;   // Aumenta el tamaño del botón
+                                font-size: 1.1rem;    // Aumenta el tamaño de la fuente del botón
+                              }
+
+                    }
+                }
+    }
+}
+}
+    }

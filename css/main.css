@@ -1,0 +1,537 @@
+@charset "UTF-8";
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px;
+  background-color: rgb(161, 221, 194);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Propiedades del Header */
+header {
+  height: 120px;
+  background-color: rgb(161, 221, 194);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Propiedades del Menú*/
+.navbar-prop {
+  background-color: rgb(161, 221, 194);
+  color: #000000;
+  height: 150px;
+}
+.navbar-prop .container-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-prop .container-menu .logo-container {
+  display: flex;
+  align-items: center;
+}
+.navbar-prop .container-menu .logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+.navbar-prop .container-menu .navbar-button {
+  margin-left: auto;
+  margin-right: 15px;
+  font-size: 3rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-prop .container-menu .offcanvas-prop {
+  padding: 20px;
+}
+.navbar-prop .container-menu .offcanvas-prop .menu-buttom {
+  color: #000000;
+  font-size: larger;
+}
+.navbar-prop .container-menu .offcanvas-prop .menu-buttom:hover {
+  text-shadow: 5px 5px 5px rgb(128, 127, 127);
+}
+
+/* Propiedades del Footer*/
+footer .derechos {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: small;
+  color: #000000;
+}
+footer .footer-completo {
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .footer-completo .datos {
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-completo .datos .contactanos {
+  font-weight: bold;
+  font-size: small;
+  color: #000000;
+  margin-bottom: 5px;
+}
+footer .footer-completo .redes-sociales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer .footer-completo .redes-sociales .redes {
+  font-weight: bold;
+  font-size: small;
+  color: #000000;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+footer .footer-completo .redes-sociales .instagram {
+  width: 40px;
+  height: auto;
+}
+footer .footer-completo .redes-sociales .instagram:hover {
+  filter: drop-shadow(10px 10px 10px rgb(128, 127, 127));
+}
+footer .item-fixed {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  filter: drop-shadow(10px 10px 10px rgb(128, 127, 127));
+}
+footer .item-fixed .whatsapp {
+  width: 50px;
+  height: auto;
+}
+
+/*Propiedades de Home*/
+.mainHome div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mainHome .envios {
+  margin-top: 30px;
+}
+
+#productos h2 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: x-large;
+  font-weight: bold;
+  color: #000000;
+}
+#productos p {
+  font-weight: 400;
+  font-size: larger;
+  color: #000000;
+}
+#productos .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+#productos .product-grid .product-card {
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgb(128, 127, 127);
+  text-align: center;
+  padding: 16px;
+}
+#productos .product-grid .product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+#productos .product-grid .product-card .envios {
+  margin-top: 30px;
+}
+#productos .product-grid .product-card h3 {
+  font-size: 1.1em;
+  margin: 8px 0;
+}
+#productos .product-grid .product-card p {
+  font-size: 1em;
+  color: #000000;
+}
+#productos .product-grid .product-card p.price {
+  font-weight: bold;
+  color: #000000;
+}
+#productos .product-grid .product-card button {
+  margin-top: 12px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#productos .product-grid .product-card button:hover {
+  background-color: #333;
+}
+
+#nosotros h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: x-large;
+  font-weight: bold;
+  color: #000000;
+}
+#nosotros .containerNosotros {
+  justify-content: center;
+  padding: 20px;
+}
+#nosotros .containerNosotros .containerVideo {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+#nosotros .containerNosotros .containerVideo iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+#nosotros .containerNosotros .p-nosotros {
+  font-weight: 400;
+  font-size: larger;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: #000000;
+  text-align: justify;
+  width: 100%;
+  line-height: 1.5;
+}
+#nosotros .containerNosotros .p-nosotros span {
+  display: none;
+}
+
+#mayoristas h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: x-large;
+  font-weight: bold;
+  color: #000000;
+}
+#mayoristas p {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color: #000000;
+  font-size: larger;
+  text-align: justify;
+  width: 100%;
+  line-height: 1.5;
+}
+#mayoristas .p-mayoristas {
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+#mayoristas .cuadro-container {
+  display: flex;
+  flex-wrap: inherit;
+  justify-content: center;
+  gap: 5px;
+}
+#mayoristas .cuadro-container .cuadro-btn {
+  padding: 12px 25px;
+  margin: 5px;
+  font-size: small;
+  font-weight: bold;
+  border: #000000;
+  border-radius: 5px;
+}
+#mayoristas .resultado {
+  margin-top: 20px;
+  font-size: medium;
+  font-weight: 500;
+  color: #000000;
+}
+#mayoristas .resultado strong {
+  color: #000000;
+}
+#mayoristas #formularioContacto {
+  display: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 25px;
+  box-shadow: 5px 5px 5px rgb(128, 127, 127);
+}
+#mayoristas #formularioContacto.visible {
+  display: block;
+}
+#mayoristas #formularioContacto .form-mayoristas {
+  font-size: medium;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+#mayoristas #formularioContacto #contactoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#mayoristas #formularioContacto #contactoForm .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#mayoristas #formularioContacto #contactoForm .form-group label {
+  font-size: medium;
+  color: #000000;
+  font-weight: 500;
+}
+#mayoristas #formularioContacto #contactoForm .form-group input, #mayoristas #formularioContacto #contactoForm .form-group textarea {
+  padding: 10px;
+  border: 1px solid rgb(128, 127, 127);
+  border-radius: 5px;
+  font-size: medium;
+  color: #000000;
+  background-color: white;
+}
+#mayoristas #formularioContacto #contactoForm .form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+#mayoristas #formularioContacto #contactoForm button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: medium;
+}
+#mayoristas #formularioContacto #contactoForm button:hover {
+  background-color: rgb(161, 221, 194);
+  color: #000000;
+}
+
+/* Estilos TABLET */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Propiedades del Menú */
+  .navbar-prop .container-menu .logo-container .logo {
+    max-width: 300px;
+  }
+  .navbar-prop .container-menu .offcanvas-prop .menu-buttom {
+    font-size: x-large;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* Propiedades del Footer*/
+  footer .derechos {
+    font-weight: 500;
+    font-size: larger;
+  }
+  footer .footer-completo .datos {
+    font-weight: 500;
+    font-size: larger;
+  }
+  footer .footer-completo .datos .contactanos {
+    font-weight: bold;
+    font-size: x-large;
+  }
+  footer .footer-completo .redes-sociales .redes {
+    font-weight: bold;
+    font-size: x-large;
+  }
+  /* Propiedades del Contenido Principal*/
+  .mainHome #productos h2 {
+    font-size: 40px;
+  }
+  .mainHome #productos p {
+    font-weight: 500;
+    font-size: x-large;
+  }
+  .mainHome #nosotros h2 {
+    font-size: 40px;
+  }
+  .mainHome #nosotros .containerNosotros .p-nosotros {
+    font-weight: 500;
+    font-size: x-large;
+  }
+  .mainHome #nosotros .containerNosotros .p-nosotros span {
+    display: inline;
+  }
+  .mainHome #mayoristas h2 {
+    font-size: 40px;
+  }
+  .mainHome #mayoristas p {
+    font-weight: 500;
+    font-size: x-large;
+  }
+  .mainHome #mayoristas .p-mayoristas {
+    font-size: x-large;
+  }
+  .mainHome #mayoristas .p-mayoristas .cuadro-container .cuadro-btn {
+    font-size: x-large;
+    font-weight: 500;
+  }
+  .mainHome #mayoristas #formularioContacto {
+    max-width: 700px;
+    padding: 20px;
+  }
+  .mainHome #mayoristas #formularioContacto .form-mayoristas {
+    font-size: larger;
+  }
+  .mainHome #mayoristas #formularioContacto #contactoForm {
+    gap: 10px;
+  }
+  .mainHome #mayoristas #formularioContacto #contactoForm .form-group input, .mainHome #mayoristas #formularioContacto #contactoForm .form-group textarea {
+    font-size: larger;
+  }
+  .mainHome #mayoristas #formularioContacto #contactoForm .form-group button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+}
+/* Estilos de DESKTOP*/
+@media screen and (min-width: 1024px) {
+  /* Propiedades del Footer*/
+  footer .footer-completo .datos {
+    font-size: larger;
+  }
+  footer .footer-completo .datos .contactanos {
+    font-weight: bold;
+    font-size: x-large;
+  }
+  footer .footer-completo .redes-sociales .redes {
+    font-weight: bold;
+    font-size: x-large;
+  }
+  footer .footer-completo .redes-sociales .instagram {
+    width: 60px;
+  }
+  footer .item-fixed .whatsapp {
+    width: 60px;
+  }
+  /* Propiedades del Menú */
+  @keyframes salto {
+    0%, 20% {
+      transform: translateY(0);
+    }
+    15% {
+      transform: translateY(-5px);
+    }
+  }
+  .navbar-prop .container-menu {
+    padding: 0 30px;
+  }
+  .navbar-prop .container-menu .logo-container .logo {
+    max-width: 400px;
+  }
+  .navbar-prop .container-menu .lista-nav {
+    margin-left: auto;
+  }
+  .navbar-prop .container-menu .navbar-button {
+    display: none;
+  }
+  .navbar-prop .container-menu .offcanvas-prop {
+    justify-content: right;
+  }
+  .navbar-prop .container-menu .offcanvas-prop .menu-buttom {
+    padding-left: 5px;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: larger;
+    background-color: white;
+    border-radius: 15px;
+    color: #000000;
+  }
+  .navbar-prop .container-menu .offcanvas-prop .menu-buttom:hover {
+    text-shadow: none;
+    box-shadow: 5px 5px 5px rgb(128, 127, 127);
+  }
+  .navbar-prop .container-menu .offcanvas-prop .cart-buttom {
+    display: none;
+  }
+  .navbar-prop .container-menu .offcanvas-prop .img-cart {
+    width: 5px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-top: 2px;
+  }
+  /* Propiedades del conteido Principal*/
+  .mainHome #productos h2 {
+    font-size: 50px;
+  }
+  .mainHome #nosotros h2 {
+    font-size: 50px;
+  }
+  .mainHome #nosotros .containerNosotros {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
+  .mainHome #nosotros .containerNosotros .containerVideo {
+    width: 80%;
+  }
+  .mainHome #nosotros .containerNosotros .p-nosotros {
+    width: 80%;
+  }
+  .mainHome #mayoristas h2 {
+    font-size: 50px;
+  }
+  .mainHome #mayoristas .p-mayoristas {
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .mainHome #mayoristas .p-mayoristas .cuadro-container .cuadro-btn {
+    font-size: xx-large;
+    font-weight: 600;
+  }
+  .mainHome #mayoristas .p-mayoristas .resultado {
+    margin-top: 20px;
+    font-size: larger;
+    font-weight: 500;
+    color: #000000;
+  }
+  .mainHome #mayoristas .p-mayoristas .resultado strong {
+    color: #000000;
+  }
+  .mainHome #mayoristas .p-mayoristas #formularioContacto {
+    align-content: center;
+    max-width: 700px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .mainHome #mayoristas .p-mayoristas #formularioContacto .form-mayoristas {
+    font-size: x-large;
+  }
+  .mainHome #mayoristas .p-mayoristas #formularioContacto #contactoForm .form-group label {
+    font-size: larger;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,49 @@
+@use "../utilidades/variables";
+
+//flex 
+
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+}
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+//grid
+
+@mixin grid-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+
+//mixin
+
+@mixin foto-prod{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@mixin prop-100{
+    width: 100%;
+    height: 100%;
+}
+@mixin prop-100-auto{
+    width: 100%;
+    height: auto;
+}
+
+@mixin tipo-mobile{
+    font-weight: variables.$font-w-small;
+    font-size: variables.$font-s-larger;
+}
+
+@mixin tipo-tablet{
+    font-weight: variables.$font-w-medium;
+    font-size: variables.$font-s-xl;
+}

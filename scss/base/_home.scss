@@ -1,0 +1,224 @@
+// Import Archivos Secundarios
+
+@use "../utilidades/variables";
+@use "../utilidades/mixin";
+
+
+
+
+/*Propiedades de Home*/
+
+.mainHome{ 
+        div{
+            img{
+                @include mixin.foto-prod;
+            }
+        }
+        .envios{
+            margin-top: 30px;
+        }
+    }
+    #productos{
+        h2{
+            text-align: variables.$align-center;
+            margin-top: 10px;
+            font-size: variables.$font-s-xl;
+            font-weight: variables.$font-w-black;
+            color: variables.$color-tipografia;
+        }
+        p{
+            @include mixin.tipo-mobile;
+            color: variables.$color-tipografia;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+          
+            .product-card {
+                color: variables.$color-tipografia;
+              border: none;
+              border-radius: 8px;
+              overflow: hidden;
+              box-shadow: 0 4px 6px variables.$color-shadow;
+              text-align: center;
+              padding: 16px;
+          
+              img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 12px;
+              }
+              .envios{
+                margin-top: 30px;
+            }          
+            h3 {
+                font-size: 1.1em;
+                margin: 8px 0;
+            }
+            p {
+                font-size: 1em;
+                color: variables.$color-tipografia;
+                &.price {
+                  font-weight: bold;
+                  color: variables.$color-tipografia;
+                }
+            }
+            button {
+                margin-top: 12px;
+                background-color: variables.$color-tipografia;
+                color: variables.$color-submit;
+                border: none;
+                padding: 10px 20px;
+                font-size: 1em;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover {
+                  background-color: #333;
+                }
+              }
+            }
+          }
+          
+    }
+    #nosotros{
+        h2{
+            text-align: variables.$align-center;
+            margin-top: 20px;
+            font-size: variables.$font-s-xl;
+            font-weight: variables.$font-w-black;
+            color: variables.$color-tipografia;
+        }
+        .containerNosotros{
+            justify-content: center;
+            padding: 20px;
+            .containerVideo{
+                width: variables.$ancho;
+                max-width: 800px;
+                margin-bottom: 20px;
+                iframe{
+                    @include mixin.prop-100-auto;
+                    aspect-ratio: 16 / 9;
+                }          
+            }
+            .p-nosotros{
+                @include mixin.tipo-mobile;
+                padding-bottom: 15px;
+                padding-top: 15px;
+                color: variables.$color-tipografia;
+                text-align: variables.$align-justify;
+                width: variables.$ancho;
+                line-height: 1.5;
+                span{
+                    display: none;
+                }
+            }
+    }
+}
+#mayoristas{
+    h2{
+        text-align: variables.$align-center;
+        margin-top: 20px;
+        font-size: variables.$font-s-xl;
+        font-weight: variables.$font-w-black;
+        color: variables.$color-tipografia;
+    }
+    p{
+        padding-bottom: 15px;
+        padding-top: 15px;
+        color: variables.$color-tipografia;
+        font-size: variables.$font-s-larger;
+        text-align: variables.$align-justify;
+        width: variables.$ancho;
+        line-height: 1.5;
+    }
+    .p-mayoristas{
+        font-size: variables.$font-s-medium;
+        font-weight: variables.$font-w-black;
+        text-align: variables.$align-center;
+}
+.cuadro-container{
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: center;
+    gap: 5px;
+      .cuadro-btn{
+        padding: 12px 25px;
+        margin: 5px;
+        font-size: variables.$font-s-small;
+        font-weight: variables.$font-w-black;
+        border: variables.$color-tipografia;
+        border-radius: 5px;
+      }
+}
+.resultado{
+    margin-top: 20px;
+    font-size: variables.$font-s-medium;
+    font-weight: variables.$font-w-medium;
+    color: variables.$color-tipografia;
+    strong{
+        color: variables.$color-tipografia;
+    }
+}
+#formularioContacto{
+    display: none;
+    background-color: variables.$color-submit;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 25px;
+    box-shadow: 5px 5px 5px variables.$color-shadow;
+    &.visible{
+        display: block;
+    }
+    .form-mayoristas {
+        font-size: variables.$font-s-medium;
+        color: variables.$color-tipografia;
+        text-align: variables.$align-center;
+        margin-bottom: 20px;
+        font-weight: variables.$font-w-black;
+      }
+      #contactoForm{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            label {
+                font-size: variables.$font-s-medium;
+                color: variables.$color-tipografia;
+                font-weight: 500;
+              }
+              input, textarea {
+                padding: 10px;
+                border: 1px solid variables.$color-shadow;              
+                border-radius: 5px;
+                font-size: variables.$font-s-medium;
+                color: variables.$color-tipografia;
+                background-color: variables.$color-submit;
+              }
+              textarea {
+                resize: vertical;
+                min-height: 120px;
+              }
+      }
+      button {
+        background-color: variables.$color-tipografia;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        border-radius: 5px;
+        font-size: variables.$font-s-medium;
+        &:hover {
+            background-color: variables.$back-body;
+            color: variables.$color-tipografia;
+          }
+
+}
+}
+}
+}

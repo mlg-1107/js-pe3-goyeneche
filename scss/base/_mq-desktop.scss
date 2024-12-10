@@ -1,0 +1,162 @@
+// Import de Archivos Secundarios
+
+@use "../utilidades/variables";
+@use "../utilidades/mixin";
+
+// VER QUE HACER CON EL CARRITO
+/* Estilos de DESKTOP*/
+
+@media screen and (min-width:1024px){
+
+    /* Propiedades del Footer*/
+    
+    footer{
+        .footer-completo{
+            .datos{
+                font-size: variables.$font-s-larger;
+                .contactanos{
+                    font-weight: variables.$font-w-black;
+                    font-size: variables.$font-s-xl;
+                }
+            }
+            .redes-sociales{
+                .redes{
+                    font-weight: variables.$font-w-black;
+                    font-size: variables.$font-s-xl;
+                }
+                .instagram{
+                    width: 60px;
+                }
+            }
+        }
+        .item-fixed{
+            .whatsapp{
+                width: 60px;
+            }
+        }
+    }
+    
+    
+    /* Propiedades del Menú */
+    
+    @keyframes salto{
+        0%, 20%{
+            transform: translateY(0);
+        }
+        15%{
+            transform: translateY(-5px);
+        }
+    }
+    
+    .navbar-prop{
+        .container-menu{
+            padding: 0 30px;
+            .logo-container{
+                .logo{
+                    max-width: 400px;
+                }
+            }
+            .lista-nav{
+                margin-left: auto;
+            }
+            .navbar-button{
+                display: none;
+            }
+            .offcanvas-prop{
+                justify-content: right;
+                .menu-buttom{
+                    padding-left: 5px;
+                    margin-right: 10px;
+                    font-weight: variables.$font-w-medium;
+                    font-size: variables.$font-s-larger;
+                    background-color: variables.$color-submit;
+                    border-radius: 15px;
+                    color: variables.$color-tipografia;
+                    &:hover{
+                        text-shadow: none;
+                        box-shadow: 5px 5px 5px variables.$color-shadow;
+                    }
+                }
+                .cart-buttom{
+                    display: none;
+                }
+                .img-cart{
+                    width: 5px;
+                    height: auto;
+                    max-width: 100%;
+                    display: block;
+                    margin-top: 2px;
+                }
+                
+            }
+        }
+    }
+    /* Propiedades del conteido Principal*/
+    .mainHome{
+        #productos{
+            h2{
+                font-size: 50px;
+            }
+        }
+        #nosotros{
+            h2{
+                font-size: 50px;
+            }
+                .containerNosotros{
+                    @include mixin.flex;
+                    gap: 20px;
+                    align-items: center;
+                    .containerVideo{
+                        width: 80%;
+                    }
+                    .p-nosotros{
+                        width: 80%;
+                    }
+
+                }
+        }
+        #mayoristas{
+            h2{
+                font-size: 50px;
+            }
+            .p-mayoristas{
+                font-size: variables.$font-s-xl;
+                font-weight: variables.$font-w-black;
+
+            .cuadro-container{
+                .cuadro-btn{
+                    font-size: variables.$font-s-xxl;
+                    font-weight: variables.$font-w-large;
+                   
+                  }
+            }
+            .resultado{
+                margin-top: 20px;
+                font-size: variables.$font-s-larger;
+                font-weight: variables.$font-w-medium;
+                color: variables.$color-tipografia;
+                strong{
+                    color: variables.$color-tipografia;
+                }
+            }
+            #formularioContacto{
+                align-content: center;
+                max-width: 700px;
+                padding: 20px;
+                margin-bottom: 10px;
+                .form-mayoristas{
+                    font-size: variables.$font-s-xl;
+                }
+                #contactoForm{
+                    .form-group{
+                        label{
+                            font-size: variables.$font-s-larger;
+                        }
+                        
+}
+}  
+    }
+        }
+    }
+}
+}

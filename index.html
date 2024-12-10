@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre AHI TENES LA PUERTA, donde decoramos tus espacios con estilo. Transforma tu hogar con nosotros. Contáctanos para más información.">
+
+    <!-- Link de tipografía -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Link de bt -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link de mi css -->
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Home - ATLP</title>
+</head>
+<body>
+
+<header>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-prop">
+  <div class="container-fluid container-menu">
+
+    <!-- Imagen del logo -->
+    <div class="logo-container d-flex align-items-center">
+      <img class="logo" src="img/nuevo-logo.png" alt="Logo circular en color verde con las letras A T L P en color negro, a su derecha la frase AHI TENES LA PUERTA, decoramos tu lugar en el mundo">
+    </div>
+    <button class="navbar-toggler navbar-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end offcanvas-prop" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+      <ul class="navbar-nav lista-nav">
+        <li class="nav-item"><a class="nav-link active menu-buttom" href="#productos">Productos</a></li>
+        <li class="nav-item"><a class="nav-link active menu-buttom" href="#nosotros">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link active menu-buttom" href="#mayoristas">Mayoristas</a></li>
+        <!-- Enlace al carrito -->
+        <li class="nav-item">
+          <a class="nav-link menu-buttom" href="./pages/cart.html">
+            <span class="d-lg-none">Carrito</span> <!-- Texto para móvil -->
+            <span class="d-none d-lg-inline"> <!-- Ícono para escritorio -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 6H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.49-.402L.61 2H.5a.5.5 0 0 1-.5-.5zm3.14 5L4.89 13h7.56l1.286-6H3.14z"/>
+                <path d="M4.5 16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+              </svg>
+            </span>
+            <!-- Agregar el contador aquí -->
+            <span id="cart-count" class="badge bg-danger">0</span>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+        
+     
+
+
+
+
+  </header>
+
+  <main class="mainHome">
+
+    <!-- Sección Home -->
+
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="productos">
+      <h2> Productos </h2>
+      <p> Tenemos una amplia gama de productos para decorar tus espacios y que sean únicos y originales. </p>
+      <div id="product-container" class="product-grid"></div>
+    </section>
+
+    <!-- Envíos -->
+    <div class="envios">
+      <img src="img/envios-pagos.png" alt="imagen con diubujos de envios y pagos">
+    </div> 
+    
+    <!-- Sección Nosotros -->
+    <section id="nosotros">
+      <h2>Nosotros</h2>
+      <div class="containerNosotros">
+        <div class="containerVideo">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2JhBqG9q2_c?si=tJTe9aXNfQdSbmYF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <p class="p-nosotros"> Somos una empresa joven, que  tiene como objetivo hacer que tu lugar, sea el mejor del mundo. Trabajamos bastidores, chapas e imágenes enmarcadas. Podés tener tu producto con la temática que quieras! Comics, deportes, música, gaming, cine... Si no tenemos lo que buscás, lo encontramos o lo hacemos.
+        <br>
+        <span> También podemos armar productos personalizados con las fotos o imágenes que nos envíes. La foto de tu perro? La hacemos! Esa foto de ese momento hermoso? La hacemos! Un pequeño regalo empresarial?? Lo hacemos! Un regalito para tu sobri fanático de algo?? Lo hacemos! </span>
+        <br>
+        No dudes en consultarnos. Podemos ayudarte a elegir y orientarte sobre el tipo de producto que conviene para la imagen que elijas.
+        </p>
+      </div>
+      </section>
+
+    <!-- Sección Mayoristas -->
+    <section id="mayoristas">
+      <h2>Mayoristas</h2>
+      <p>Te ofrecemos bastidores para que revendas. Son los más vendidos desde hace años! Podés personalizar medidas y diseños a tu gusto.
+        <br>
+        Aquí te mostramos el precio de cada uno y a cuánto podés revenderlos. 
+      </p>
+      
+      <p class="p-mayoristas">Selecciona el tamaño del cuadro para ver el precio de reventa :</p>
+  
+      <div class="cuadro-container" id="cuadrosDisponibles">
+      </div>
+  
+      <div id="resultado" class="resultado" style="display: none;">
+      </div>
+
+      <div id="formularioContacto"">
+        <p class="form-mayoristas">Si querés hacer tu pedido mayorista, o hacer cualquier tipo de consulta, ponete en contacto con nosotros:</p>
+        <div id="formulario"></div>
+      </div>
+    </div>
+  
+    </section>
+  </main>
+
+  <footer>
+    <p class="derechos"> Todos los derechos reservados </p>
+    <div class="footer-completo">
+      <div class="datos">
+        <p class="contactanos"> CONTACTANOS </p>
+        <p> Dirección: Las Acacias 1344, C.A.B.A. <br> Whatsapp: 11 3408-2901 <br> Mail: <a href="mailto:ahiteneslapuerta@gmail.com">ahiteneslapuerta@gmail.com</a></p>
+      </div>
+      <div class="redes-sociales">
+        <p class="redes"> REDES SOCIALES </p>
+        <a target="_blank" href="https://www.instagram.com/ahiteneslapuerta?igsh=N3E0eTN0NDV4Ynds">
+          <img src="icons/ig-linea.svg" alt="Logo de Instagram" class="instagram">
+        </a>
+      </div>
+    </div>
+    <div class="item-fixed">
+      <a target="_blank" href="https://api.whatsapp.com/send/?phone=541157114919">
+        <img src="icons/wp-linea.svg" alt="Logo de Whatsapp" class="whatsapp">
+      </a>
+    </div>
+  </footer>
+
+   <!-- Link de JS -->
+   
+   <script src="JS/app.js"></script>
+   <script src="JS/carrito.js"></script> 
+   <script src="JS/calculator.js"></script>
+   <script src="JS/contacto.js"></script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+ 
+</body>
+</html>
