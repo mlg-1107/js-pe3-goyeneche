@@ -1,4 +1,4 @@
-// Datos de los productos
+// Productos
 const products = [
     {
         img: "./img/rocky.JPG",
@@ -188,25 +188,28 @@ const products = [
 ];
 
 
-// Función para actualizar el contador del carrito
+// Actualizar contador carrito
 function updateCartCount() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartCount = document.getElementById('cart-count');
     cartCount.textContent = cart.length;  // Actualiza el número de productos
 }
 
-// Función para agregar un producto al carrito
+// Agregar producto
 function addToCart(product) {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    cart.push(product);  // Añadir el producto al carrito
-    localStorage.setItem('cart', JSON.stringify(cart));  // Guardar el carrito actualizado en localStorage
+    
+    const productWithQuantity = { ...product, quantity: 1 };
+    
+    cart.push(productWithQuantity); 
+    localStorage.setItem('cart', JSON.stringify(cart));
     updateCartCount();  // Actualizar el contador
 }
 
 // Obtener el contenedor de productos en el HTML
 const container = document.getElementById('product-container');
 
-// Crear las tarjetas de productos dinámicamente
+// Crear cards de productos
 products.forEach((product) => {
     // Crear el contenedor de la tarjeta
     const card = document.createElement('div');
@@ -231,20 +234,20 @@ products.forEach((product) => {
     button.textContent = "Comprar";
     button.classList.add('btn', 'btn-primary');
 
-    // Añadir el evento de clic para agregar al carrito
+    // Evento para agregar al carrito
     button.addEventListener('click', () => {
-        addToCart(product);  // Agregar el producto al carrito
+        addToCart(product);
     });
 
-    // Añadir los elementos a la tarjeta
+    // Agregar elementos a card
     card.appendChild(imageElement);
     card.appendChild(titleElement);
     card.appendChild(priceElement);
     card.appendChild(button);
 
-    // Añadir la tarjeta al contenedor de productos
+    // Agregar card a contenedor de productos
     container.appendChild(card);
 });
 
-// Actualiza el contador del carrito al cargar la página
+// Actualizar contador del carrito
 updateCartCount();

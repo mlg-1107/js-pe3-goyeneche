@@ -34,34 +34,32 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 16px;
-          
             .product-card {
                 color: variables.$color-tipografia;
-              border: none;
-              border-radius: 8px;
-              overflow: hidden;
-              box-shadow: 0 4px 6px variables.$color-shadow;
-              text-align: center;
-              padding: 16px;
-          
-              img {
+                border: none;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 6px variables.$color-shadow;
+                text-align: center;
+                padding: 16px;
+                img {
                 max-width: 100%;
                 height: auto;
                 margin-bottom: 12px;
-              }
-              .envios{
+                }
+                .envios{
                 margin-top: 30px;
-            }          
-            h3 {
+                }          
+                h3 {
                 font-size: 1.1em;
                 margin: 8px 0;
-            }
-            p {
+                }
+                p {
                 font-size: 1em;
                 color: variables.$color-tipografia;
                 &.price {
-                  font-weight: bold;
-                  color: variables.$color-tipografia;
+                    font-weight: bold;
+                    color: variables.$color-tipografia;
                 }
             }
             button {
@@ -74,12 +72,11 @@
                 border-radius: 5px;
                 cursor: pointer;
                 &:hover {
-                  background-color: #333;
+                    background-color: #333;
                 }
-              }
+                }
             }
-          }
-          
+            }
     }
     #nosotros{
         h2{
@@ -114,7 +111,7 @@
                 }
             }
     }
-}
+    }
 #mayoristas{
     h2{
         text-align: variables.$align-center;
@@ -142,14 +139,14 @@
     flex-wrap: inherit;
     justify-content: center;
     gap: 5px;
-      .cuadro-btn{
+    .cuadro-btn{
         padding: 12px 25px;
         margin: 5px;
         font-size: variables.$font-s-small;
         font-weight: variables.$font-w-black;
         border: variables.$color-tipografia;
         border-radius: 5px;
-      }
+    }
 }
 .resultado{
     margin-top: 20px;
@@ -178,8 +175,8 @@
         text-align: variables.$align-center;
         margin-bottom: 20px;
         font-weight: variables.$font-w-black;
-      }
-      #contactoForm{
+    }
+    #contactoForm{
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -191,21 +188,21 @@
                 font-size: variables.$font-s-medium;
                 color: variables.$color-tipografia;
                 font-weight: 500;
-              }
-              input, textarea {
+            }
+            input, textarea {
                 padding: 10px;
                 border: 1px solid variables.$color-shadow;              
                 border-radius: 5px;
                 font-size: variables.$font-s-medium;
                 color: variables.$color-tipografia;
                 background-color: variables.$color-submit;
-              }
-              textarea {
+            }
+            textarea {
                 resize: vertical;
                 min-height: 120px;
-              }
-      }
-      button {
+            }
+    }
+    button {
         background-color: variables.$color-tipografia;
         color: white;
         border: none;
@@ -216,9 +213,8 @@
         &:hover {
             background-color: variables.$back-body;
             color: variables.$color-tipografia;
-          }
-
+        }
 }
-}
+    }
 }
 }

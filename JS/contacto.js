@@ -4,7 +4,7 @@ formularioDiv.classList.add('visible');
 crearFormulario();
 
 
-// Función para crear el formulario de contacto dinámicamente (con nombre, email y mensaje)
+// Crear el formulario de contacto
 function crearFormulario() {
 const formularioContainer = document.getElementById('formulario');
 
@@ -70,7 +70,7 @@ formulario.appendChild(submitDiv);
 // Agregar formulario al contenedor
 formularioContainer.appendChild(formulario);
 
-// Manejo del evento submit del formulario
+// Evento submit
 formulario.addEventListener('submit', function (event) {
   event.preventDefault();
   const nombre = nombreInput.value;

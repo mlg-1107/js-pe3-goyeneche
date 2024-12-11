@@ -3,13 +3,12 @@
 @use "../utilidades/variables";
 @use "../utilidades/mixin";
 
-// VER QUE HACER CON EL CARRITO
 /* Estilos de DESKTOP*/
 
 @media screen and (min-width:1024px){
 
-    /* Propiedades del Footer*/
-    
+/* Propiedades del Footer*/
+
     footer{
         .footer-completo{
             .datos{
@@ -35,10 +34,9 @@
             }
         }
     }
-    
-    
+
     /* Propiedades del Menú */
-    
+
     @keyframes salto{
         0%, 20%{
             transform: translateY(0);
@@ -112,7 +110,6 @@
                     .p-nosotros{
                         width: 80%;
                     }
-
                 }
         }
         #mayoristas{
@@ -122,41 +119,53 @@
             .p-mayoristas{
                 font-size: variables.$font-s-xl;
                 font-weight: variables.$font-w-black;
-
-            .cuadro-container{
+                .cuadro-container{
                 .cuadro-btn{
                     font-size: variables.$font-s-xxl;
                     font-weight: variables.$font-w-large;
-                   
-                  }
-            }
-            .resultado{
-                margin-top: 20px;
-                font-size: variables.$font-s-larger;
-                font-weight: variables.$font-w-medium;
-                color: variables.$color-tipografia;
-                strong{
+                }
+                }
+                .resultado{
+                    margin-top: 20px;
+                    font-size: variables.$font-s-larger;
+                    font-weight: variables.$font-w-medium;
                     color: variables.$color-tipografia;
+                    strong{
+                    color: variables.$color-tipografia;
+                    }
+                }
+                #formularioContacto{
+                    align-content: center;
+                    max-width: 700px;
+                    padding: 20px;
+                    margin-bottom: 10px;
+                    .form-mayoristas{
+                        font-size: variables.$font-s-xl;
+                    }
+                    #contactoForm{
+                        .form-group{
+                            label{
+                            font-size: variables.$font-s-larger;
+                            }
+                        }
+                    }  
                 }
             }
-            #formularioContacto{
-                align-content: center;
-                max-width: 700px;
-                padding: 20px;
-                margin-bottom: 10px;
-                .form-mayoristas{
-                    font-size: variables.$font-s-xl;
-                }
-                #contactoForm{
-                    .form-group{
-                        label{
-                            font-size: variables.$font-s-larger;
-                        }
-                        
-}
-}  
-    }
         }
     }
-}
+    .mainCarrito{
+        h2{
+            font-size: 50px;
+        }
+        #cart-actions{
+            justify-content: center;
+            width: 100%;
+            .btn-warning{
+                width: 50%;
+                }
+                .btn-success{
+                    width: 50%;
+                }
+        }
+    }
 }

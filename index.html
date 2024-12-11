@@ -19,15 +19,15 @@
 
     <link rel="stylesheet" href="css/main.css">
 
-    <title>Home - ATLP</title>
+    <title> Ahí Tenés la Puerta </title>
 </head>
 <body>
 
 <header>
+  
 <!-- Barra de navegación -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-prop">
   <div class="container-fluid container-menu">
-
     <!-- Imagen del logo -->
     <div class="logo-container d-flex align-items-center">
       <img class="logo" src="img/nuevo-logo.png" alt="Logo circular en color verde con las letras A T L P en color negro, a su derecha la frase AHI TENES LA PUERTA, decoramos tu lugar en el mundo">
@@ -36,36 +36,35 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="offcanvas offcanvas-end offcanvas-prop" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-      <ul class="navbar-nav lista-nav">
-        <li class="nav-item"><a class="nav-link active menu-buttom" href="#productos">Productos</a></li>
-        <li class="nav-item"><a class="nav-link active menu-buttom" href="#nosotros">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link active menu-buttom" href="#mayoristas">Mayoristas</a></li>
-        <!-- Enlace al carrito -->
-        <li class="nav-item">
-          <a class="nav-link menu-buttom" href="./pages/cart.html">
-            <span class="d-lg-none">Carrito</span> <!-- Texto para móvil -->
-            <span class="d-none d-lg-inline"> <!-- Ícono para escritorio -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 6H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.49-.402L.61 2H.5a.5.5 0 0 1-.5-.5zm3.14 5L4.89 13h7.56l1.286-6H3.14z"/>
-                <path d="M4.5 16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-              </svg>
-            </span>
-            <!-- Agregar el contador aquí -->
-            <span id="cart-count" class="badge bg-danger">0</span>
-          </a>
-        </li>
-        
-      </ul>
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="navbarOffcanvasLgLabel">Menú</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav lista-nav">
+          <li class="nav-item"><a class="nav-link active menu-buttom" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link active menu-buttom" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link active menu-buttom" href="#mayoristas">Mayoristas</a></li>
+          <!-- Enlace al carrito -->
+          <li class="nav-item">
+            <a class="nav-link menu-buttom" href="./pages/cart.html">
+              <span class="d-lg-none">Carrito</span> <!-- Texto para móvil -->
+              <span class="d-none d-lg-inline"> <!-- Ícono para escritorio -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 6H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.49-.402L.61 2H.5a.5.5 0 0 1-.5-.5zm3.14 5L4.89 13h7.56l1.286-6H3.14z"/>
+                  <path d="M4.5 16a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                </svg>
+              </span>
+              <!-- Agregar el contador aquí -->
+              <span id="cart-count" class="badge bg-danger">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
-        
-     
-
-
-
-
-  </header>
+</header>
 
   <main class="mainHome">
 
@@ -148,17 +147,12 @@
     </div>
   </footer>
 
-   <!-- Link de JS -->
-   
-   <script src="JS/app.js"></script>
-   <script src="JS/carrito.js"></script> 
-   <script src="JS/calculator.js"></script>
-   <script src="JS/contacto.js"></script>
+  <!-- Link de JS -->
 
-
-
+  <script src="JS/app.js"></script>
+  <script src="JS/calculator.js"></script>
+  <script src="JS/contacto.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
- 
 </body>
 </html>

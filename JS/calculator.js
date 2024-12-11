@@ -15,12 +15,12 @@ const cuadros = [
     new Cuadro("XL", "27x42 cms", 10000)
 ];
 
-// Función para calcular el precio de reventa
+// Calcular precio de reventa
 function calcularReventa(precio) {
     return precio * 1.25;
 }
 
-// Función para mostrar los cuadros disponibles en botones
+// Mostrar cuadros en botones
 function mostrarCuadros() {
     const contenedor = document.getElementById('cuadrosDisponibles');
     cuadros.forEach(cuadro => {
@@ -32,7 +32,7 @@ function mostrarCuadros() {
     });
 }
 
-// Función para mostrar el precio de reventa al usuario
+// Mostrar precio de reventa
 function mostrarPrecioReventa(cuadro) {
     const precioReventa = calcularReventa(cuadro.precio);
     const resultadoDiv = document.getElementById('resultado');
@@ -44,5 +44,4 @@ function mostrarPrecioReventa(cuadro) {
     `;
 }
 
-// Llamar a la función para mostrar los cuadros cuando cargue la página
 mostrarCuadros();
