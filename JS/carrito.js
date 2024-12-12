@@ -130,6 +130,7 @@ function clearCart() {
   localStorage.removeItem('cart');
   renderCart();  // Volver a renderizar el carrito vacío
   updateCartCount();  // Actualizar el contador
+  document.getElementById('cart-total').textContent = "";
 }
 
 // Simular el proceso de pago
